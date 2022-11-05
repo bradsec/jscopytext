@@ -1,0 +1,70 @@
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: #222222;
+    background: #fafafa;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: 150px;
+    background: #F2F2F6;
+    border: 1px solid #ddd;
+  }
+
+  button {
+    position: relative;
+    padding: 15px;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: bold;
+    color: #fafafa;
+    background: #34568B;
+    border-radius: 6px;
+  }
+
+  button:hover,
+  button:focus {
+    background: #222222;
+  }
+
+  .done {
+    position: absolute;
+    left: 0; top: 0; right: 0;
+    text-align: center;
+    opacity: 0;
+    color: #000;
+    transition: all .800s;
+    transform: translateY(-1em);
+  }
+  .copied .done {
+    opacity: 1;
+    transform: translateY(-3em);
+  }
+  h1 {
+    margin: 1.75em auto 1.25em;
+  }
+
+  footer {
+    color: #CCCCCC;
+    margin: 10px;
+    font-size: 0.8em;
+  }
