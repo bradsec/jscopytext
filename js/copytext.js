@@ -13,18 +13,20 @@ function copyText(e) {
     // Select text value to copy from copyEl
     copyEl.select();
     copyEl.setSelectionRange(0, 99999);
+
     // Add animation effect to show copied
     e.target.classList.add( 'copied' );
     setTimeout(function() { e.target.classList.remove( 'copied' ); }, 800)
-    // Copy text to clipboard
+    
+    // Copy text to clipboard using navigator fallback to execCommand copy
     copyTextToClipboard(copyEl.value);
     async function copyTextToClipboard(text) {
-        try {
-            await navigator.clipboard.writeText(text);
-        } catch(err) {
-            console.log('Error in copying text: ', err);
+        if ('clipboard' in navigator) {
+          return await navigator.clipboard.writeText(text);
+        } else {
+          return document.execCommand('copy', true, text);
         }
-    }
+      }
 }
 
 window.addEventListener("click", copyText)

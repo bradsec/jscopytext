@@ -1,8 +1,7 @@
-# JSCopyText
-### Copy text to clipboard from textareas using Vanilla Javascript
+# JSCOPYTEXT
+### Copy text to clipboard from different `textarea` input fields on same page with button clicks using Vanilla JavaScript.
 
-- On button click select and copy textarea to clipboard
-- Uses `navigator.clipboard.writeText` not depreciated `document.execCommand('copy')`
+- Uses `navigator.clipboard.writeText` with fallback to depreciated `document.execCommand('copy')`
 
 ### [View Demo](https://bradsec.github.io/jscopytext)
 
@@ -10,5 +9,6 @@
 
 ### References / Credit
 
+- https://blog.logrocket.com/implementing-copy-clipboard-react-clipboard-api/
 - https://codepen.io/kocsten/pen/dybNwrW
 - https://codepen.io/craigbuckler/pen/gaQLjo

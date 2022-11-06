@@ -1,7 +1,7 @@
 body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: 1em;
-    color: #222222;
+    font-size: 0.8em;
+    color: #323330;
     background: #fafafa;
 }
 
@@ -11,15 +11,25 @@ h1 {
 
 h2 {
     font-size: 1.2em;
+    color: #A9A9A9;
 }
 
-a, a:link, a:active, a:visited {
-    color: #CCCCCC;
+.js {
+  padding: 4px 8px;
+  background: #F0DB4F;
+  color: #323330;
+}
+
+a,
+a:link, 
+a:active,
+a:visited {
+    color: #A9A9A9;
     text-decoration: none;
 }
 
 a:hover {
-    color: #222222;
+    color: #323330;
 }
 
 #container {
@@ -30,12 +40,15 @@ a:hover {
 }
 
 textarea {
-    margin: 10px;
+    margin: 15px auto;
     padding: 10px;
-    width: 90%;
+    width: 100%;
     height: 150px;
     background: #F2F2F6;
-    border: 1px solid #ddd;
+    color: #808080;
+    border: 1px solid #DDDDDD;
+    display: block;
+
   }
 
   button {
@@ -45,14 +58,19 @@ textarea {
     text-transform: uppercase;
     letter-spacing: 0.12em;
     font-weight: bold;
-    color: #fafafa;
+    color: #FAFAFA;
     background: #34568B;
     border-radius: 6px;
   }
 
-  button:hover,
+  button:hover {
+    color: #FAFAFA;
+    background: #323330;
+  }
+
   button:focus {
-    background: #222222;
+    color: #A9A9A9;
+    background: #CCCCCC;
   }
 
   .done {
@@ -60,7 +78,7 @@ textarea {
     left: 0; top: 0; right: 0;
     text-align: center;
     opacity: 0;
-    color: #000;
+    color: #000000;
     transition: all .800s;
     transform: translateY(-1em);
   }
@@ -73,7 +91,7 @@ textarea {
   }
 
   footer {
-    color: #CCCCCC;
-    margin: 10px;
+    color: #A9A9A9;
+    margin: 30px auto;
     font-size: 0.8em;
   }
