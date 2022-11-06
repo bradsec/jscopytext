@@ -42,13 +42,13 @@ a:hover {
 textarea {
     margin: 15px auto;
     padding: 10px;
+    display: block;
+    box-sizing: border-box;
     width: 100%;
     height: 150px;
     background: #F2F2F6;
     color: #808080;
     border: 1px solid #DDDDDD;
-    display: block;
-
   }
 
   button {
